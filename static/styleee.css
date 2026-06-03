@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(14, 14, 82);
+     margin: 0px;
+    padding: 0px;
+}
+
+#logodosenai {
+    width: 240px;
+    height: 80px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#navbarNav {
+    font-size: 30px;
+    padding-left: 250px;
+    background-color:  #005caa;
+    color:#005caa
+}
+
+.nav-link {
+    color: aliceblue;
+}
+
+.nav-link {
+     color: aliceblue;
+}
+
+#navbar {
+    background-color: #005caa;
+}
+
+.nav-link:hover {
+    color: orange !important;
+}
+
+#homem { 
+
+    opacity: 0.3;
+}

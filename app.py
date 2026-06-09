@@ -1,14 +1,39 @@
-from flask import Flask, render_template
-
+from flask import Flask, render_template, jsonify
+from flask_cors import CORS
+import mysql.connector
+ 
 app = Flask(__name__)
-
+CORS(app)
+ 
+def conectar():
+    return mysql.connector.connect(
+        host="localhost",
+        user="root",
+        password="",
+        database="almoxarifado"
+    )
+ 
 @app.route("/")
 def login():
-    return render_template("index.html")
-
+    return render_template("login.html")
+ 
 @app.route("/home")
 def home():
     return render_template("paginadois.html")
-
+ 
+@app.route("/almoxarifado")
+def almoxarifado():
+    return render_template("almoxarifado.html")
+ 
+@app.route("/api/produtos")
+def get_produtos():
+    db = conectar()
+    cursor = db.cursor(dictionary=True)
+    cursor.execute("SELECT * FROM produtos")
+    produtos = cursor.fetchall()
+    db.close()
+    return jsonify(produtos)
+ 
 if __name__ == "__main__":
     app.run(debug=True)
+ 

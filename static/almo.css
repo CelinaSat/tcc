@@ -1,6 +1,4 @@
-body {
-    background-color: rgb(116, 14, 65);
-}
+
 
 #logodosenai {
     width: 240px;
@@ -29,10 +27,40 @@ body {
 }
 
 #homem { 
-
+    position:absolute
     opacity: 0.3;
 }
 
 .nav-link:hover {
     color: orange !important;
+}
+
+.container-foto {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../static/trabalho.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.tabela-sobre-foto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 8px;
+    padding: 16px;
+}
+
+#tabelaProdutos thead tr th {
+    background-color: rgb(14, 14, 82) !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+#tabelaProdutos tbody tr td {
+    background-color: rgb(255, 255, 255) !important;
+    color: rgb(14, 14, 82) !important;
 }

@@ -16,10 +16,23 @@ def conectar():
 @app.route("/")
 def login():
     return render_template("login.html")
+
+@app.route("/adm")
+def adm():
+    return render_template("adm.html")
+
+@app.route("/add")
+def add():
+    return render_template("add.html")
+
+@app.route("/adicio")
+def adicio():
+    return render_template("adicio.html")
  
-@app.route("/home")
-def home():
+@app.route("/paginadois")
+def paginadois():
     return render_template("paginadois.html")
+
  
 @app.route("/almoxarifado")
 def almoxarifado():

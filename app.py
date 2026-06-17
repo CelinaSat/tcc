@@ -1,9 +1,7 @@
 from flask import Flask, render_template, jsonify
-from flask_cors import CORS
 import mysql.connector
  
 app = Flask(__name__)
-CORS(app)
  
 def conectar():
     return mysql.connector.connect(
@@ -17,6 +15,10 @@ def conectar():
 def login():
     return render_template("login.html")
 
+@app.route("/paginadois")
+def paginadois():
+    return render_template("paginadois.html")
+
 @app.route("/adm")
 def adm():
     return render_template("adm.html")
@@ -28,12 +30,7 @@ def add():
 @app.route("/adicio")
 def adicio():
     return render_template("adicio.html")
- 
-@app.route("/paginadois")
-def paginadois():
-    return render_template("paginadois.html")
 
- 
 @app.route("/almoxarifado")
 def almoxarifado():
     return render_template("almoxarifado.html")

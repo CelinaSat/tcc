@@ -11,7 +11,8 @@
 #navbarNav {
     font-size: 30px;
     padding-left: 250px;
-    background-color:  #005caa;
+    background-color:  #192a6b;
+    border-color: #192a6b;
 }
 
 .nav-link {
@@ -23,16 +24,17 @@
 }
 
 #navbar {
-    background-color: #005caa;
+    background-color: #192a6b;
+    border-color: #192a6b;
 }
 
 #homem { 
     position:absolute
-    opacity: 0.3;
+    opacity 0.4;
 }
 
 .nav-link:hover {
-    color: orange !important;
+    color: rgb(255, 119, 0) !important;
 }
 
 .container-foto {

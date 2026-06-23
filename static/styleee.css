@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(14, 14, 82);
+    background-color: #192a6b;
      margin: 0px;
     padding: 0px;
 }
@@ -15,12 +15,14 @@ body {
 #navbarNav {
     font-size: 30px;
     padding-left: 250px;
-    background-color:  #005caa;
-    color:#005caa
+    background-color:  #192a6b;
+    color:#192a6b
+    
 }
 
 .nav-link {
     color: aliceblue;
+
 }
 
 .nav-link {
@@ -28,14 +30,15 @@ body {
 }
 
 #navbar {
-    background-color: #005caa;
+    background-color: #192a6b;
+    border-color: #192a6b;
 }
 
 .nav-link:hover {
-    color: orange !important;
+    color: rgb(255, 119, 0) !important;
 }
 
 #homem { 
 
-    opacity: 0.3;
+    opacity: 0.2;
 }

@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, jsonify, request, redirect
 import mysql.connector
  
 app = Flask(__name__)
@@ -43,7 +43,23 @@ def get_produtos():
     produtos = cursor.fetchall()
     db.close()
     return jsonify(produtos)
+
+@app.route("/adicionar", methods=["POST"])
+def adicionar():
+    nome      = request.form["nome"]
+    categoria = request.form["categoria"]
+    quantidade = request.form["quantidade"]
+
+    db = conectar()
+    cursor = db.cursor()
+    cursor.execute(
+        "INSERT INTO produtos (Nome, Categoria, Quantidade) VALUES (%s, %s, %s)",
+        (nome, categoria, quantidade)
+    )
+    db.commit()
+    db.close()
+
+    return redirect("/almoxarifado")
  
 if __name__ == "__main__":
     app.run(debug=True)
- 

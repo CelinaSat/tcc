@@ -14,6 +14,7 @@ body {
     font-size: 30px;
     padding-left: 250px;
     background-color:  #192a6b;
+    border-color: #19296b;
      border-color: #192a6b;
 }
 
@@ -32,9 +33,37 @@ body {
 
 #homem { 
 
-    opacity: 0.4;
+    opacity: 0.5;
+
+
 }
 
 .nav-link:hover {
     color: rgb(255, 119, 0) !important;
+}
+
+#div_do_card{
+    position: absolute;
+    top: 110px;
+    left: 130px;
+    border-radius: 50px;
+    border-color: #19296bbf;
+}
+
+#card {
+    border-radius: 22px;
+    border-width: 1px;
+    border-color: #19296b ;
+}
+
+#botao_adicio {
+background-color: rgb(255, 119, 0) ;
+    border-width: 1px;
+    border-color: rgb(193, 91, 2) ;
+}
+
+#titulo {
+    color: #192a6b;
+    font-weight: bold;
+    
 }

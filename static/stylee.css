@@ -14,6 +14,7 @@ body {
     font-size: 30px;
     padding-left: 250px;
     background-color:  #192a6b;
+    color: #192a6b;
      border: none;
 }
 
@@ -33,6 +34,7 @@ body {
 #homem { 
 
     opacity: 0.4;
+   
 }
 
 .nav-link:hover {

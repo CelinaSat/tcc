@@ -34,28 +34,35 @@
 
 <img id="logodosenai" src="../static/senainovo.jpg" alt="logodosenai" />
 <img id="homem" src="../static/trabalho.png" alt="homem" />
-<div id="div_do_card" class="container mt-5">
-    <div id="card" class="card p-4 shadow" style="max-width: 500px; margin: auto;">
-        <h3 id="titulo" class="mb-4">Adicionar Item</h3>
-        <form action="/adicionar" method="POST">
-            <div class="mb-3">
-                <label id="titulo" class="form-label">Nome:</label>
-                <input type="text" class="form-control" name="nome" required>
-                
-            </div>
-            <div class="mb-3">
-                <label id="titulo" class="form-label">Categoria:</label>
-                <input type="text" class="form-control" name="categoria">
-            </div>
-            <div class="mb-3">
-                <label id="titulo" class="form-label">Quantidade:</label>
-                <input type="number" class="form-control" name="quantidade" required min="1">
-            </div>
-            <button id="botao_adicio" type="submit" class="btn btn-success w-100">Adicionar</button>
-        </form>
-    </div>
-</div>
 
+ <div id= "div_do_card" class= "card" style="width: 18rem;">
+  <div id="titulo" class="card-body">
+    <p  class="card-text"><div class="container">
+      <h2>Adicionar Item</h2>
+      <br>
+        <div id="titulo" class="form-group">
+          <label for="inputdefault">Nome:</label>
+          <input class="form-control" id="inputdefault" type="text">
+        </div>
+        <br>
+        <div id="titulo" class="form-group">
+          <label for="inputlg">Categoria:</label>
+          <input class="form-control input-lg" id="inputlg" type="text">
+        </div>
+        <br>
+        <div id="titulo" class="form-group">
+          <label for="inputsm">Quantidade:</label>
+          <input class="form-control input-sm" id="inputsm" type="text">
+          <br>
+          <button id="botao_adicio" type="button" class="btn btn-primary">Adicionar</button>
+        </div>
+       
+        </div>
+      </form>
+    </div>
+    .</p>
+  </div>
+</div>
 
 </body>
 </html>

@@ -44,26 +44,38 @@ body {
 
 #div_do_card{
     position: absolute;
-    top: 110px;
-    left: 130px;
-    border-radius: 50px;
+    top: 200px;
+    left: 650px;
+    border-radius: 20px;
     border-color: #19296bbf;
 }
 
-#card {
-    border-radius: 22px;
-    border-width: 1px;
-    border-color: #19296b ;
-}
-
 #botao_adicio {
-background-color: rgb(255, 119, 0) ;
-    border-width: 1px;
-    border-color: rgb(193, 91, 2) ;
+    background-color: rgb(255, 119, 0) ;
+        border-width: 1px;
+        border-color: rgb(193, 91, 2) ;
+         position: absolute;
+         left: 92px;
+    }
+
+    #titulo {
+        color: #192a6b;
+        font-weight: bold;
+        
+    }
+
+.form-control{
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-#titulo {
-    color: #192a6b;
-    font-weight: bold;
-    
+.caixa{
+    text-align: center;
+}
+
+#botao_adicio{
+    width: 300px;
+    display: block;
+    margin: 20px auto;
 }

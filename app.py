@@ -34,7 +34,11 @@ def adicio():
 @app.route("/almoxarifado")
 def almoxarifado():
     return render_template("almoxarifado.html")
- 
+
+@app.route("/retirada")
+def retirada():
+    return render_template("retirada.html")
+
 @app.route("/api/produtos")
 def get_produtos():
     db = conectar()
@@ -52,14 +56,15 @@ def adicionar():
 
     db = conectar()
     cursor = db.cursor()
+
     cursor.execute(
         "INSERT INTO produtos (Nome, Categoria, Quantidade) VALUES (%s, %s, %s)",
         (nome, categoria, quantidade)
     )
     db.commit()
     db.close()
-
     return redirect("/almoxarifado")
  
 if __name__ == "__main__":
-    app.run(debug=True)
+  app.run(host='0.0.0.0', port=5000, debug=True)
+
